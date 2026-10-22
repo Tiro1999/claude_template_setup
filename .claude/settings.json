@@ -1,0 +1,22 @@
+{
+    "model": "claude-opus-5-5",
+    "permissions":{
+        "allow":[
+            "Bash(git pull *)"
+        ],
+        "deny":[
+            "Bash(rm -f .git/*)"
+        ],
+        "ask":[
+            "Bash(nmap *)",
+            "WebFetch"
+        ],
+        "defaultMode":"acceptEdits",
+        "additionalDirectories": []
+    },
+    "env":{},
+    "hooks":{},
+    "language": "en, de",
+    "respectGitignore": true,
+    "autoMemoryDirectory": ".claude/docs/"
+}
