@@ -2,10 +2,45 @@
     "model": "claude-opus-5-5",
     "permissions":{
         "allow":[
-            "Bash(git pull *)"
+            "Bash(git pull *)",
+            "Bash(git status *)",
+            "Bash(git show *)",
+            "Bash(git diff *)",
+            "Bash(git log *)",
+            "Bash(git describe *)",
+            "Bash(git check-ignore *)",
+            "Bash(git cat-file *)",
+            "Bash(git branch *)",
+            "Bash(git remote -v *)"
         ],
         "deny":[
-            "Bash(rm -f .git/*)"
+            "Bash(rm -f .git/*)",
+            "Bash(rm * .git/*)",
+            "Bash(chmod u+w .git/*)",
+            "Bash(chmod * .git/*)",
+            "Bash(mv .git/*)",
+            "Bash(truncate * .git/*)",
+            "Bash(git unpack-objects)",
+            "Bash(git reset *)",
+            "Bash(git branch -D)",
+            "Bash(git clean -fd)",
+            "Bash(git clean *)",
+            "Bash(git merge *)",
+            "Bash(git commit *)",
+            "Bash(git tag *)",
+            "Bash(git push *)",
+            "Bash(git rebase *)",
+            "Bash(git filter-repo *)",
+            "READ(./.env)",
+            "Bash(rm -rf *)",
+            "Bash(rm -fr *)",
+            "Bash(wget *)",
+            "Bash(curl *)",
+            "Bash(nc *)",
+            "Bash(netcat *)",
+            "Bash(networksetup *)",
+            "Bash(sudo)",
+            "Read(~/.ssh/**)"
         ],
         "ask":[
             "Bash(nmap *)",
