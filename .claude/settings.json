@@ -11,7 +11,10 @@
             "Bash(git check-ignore *)",
             "Bash(git cat-file *)",
             "Bash(git branch *)",
-            "Bash(git remote -v *)"
+            "Bash(git remote -v *)",
+            "Bash(npm --version)",
+            "Bash(npm -v)",
+            "Bash(npm view *)"
         ],
         "deny":[
             "Bash(rm -f .git/*)",
@@ -40,6 +43,7 @@
             "Bash(netcat *)",
             "Bash(networksetup *)",
             "Bash(sudo)",
+            "Bash(npm install)",
             "Read(~/.ssh/**)"
         ],
         "ask":[
