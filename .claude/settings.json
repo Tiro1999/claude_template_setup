@@ -1,5 +1,5 @@
 {
-    "model": "claude-opus-5-5",
+    "model": "opus",
     "permissions":{
         "allow":[
             "Bash(git pull *)",
@@ -23,9 +23,9 @@
             "Bash(chmod * .git/*)",
             "Bash(mv .git/*)",
             "Bash(truncate * .git/*)",
-            "Bash(git unpack-objects)",
+            "Bash(git unpack-objects *)",
             "Bash(git reset *)",
-            "Bash(git branch -D)",
+            "Bash(git branch -D *)",
             "Bash(git clean -fd)",
             "Bash(git clean *)",
             "Bash(git merge *)",
@@ -34,7 +34,7 @@
             "Bash(git push *)",
             "Bash(git rebase *)",
             "Bash(git filter-repo *)",
-            "READ(./.env)",
+            "Read(./.env)",
             "Bash(rm -rf *)",
             "Bash(rm -fr *)",
             "Bash(wget *)",
@@ -42,8 +42,8 @@
             "Bash(nc *)",
             "Bash(netcat *)",
             "Bash(networksetup *)",
-            "Bash(sudo)",
-            "Bash(npm install)",
+            "Bash(sudo *)",
+            "Bash(npm install *)",
             "Read(~/.ssh/**)"
         ],
         "ask":[
@@ -56,6 +56,5 @@
     "env":{},
     "hooks":{},
     "language": "en, de",
-    "respectGitignore": true,
-    "autoMemoryDirectory": ".claude/docs/"
+    "respectGitignore": true
 }
